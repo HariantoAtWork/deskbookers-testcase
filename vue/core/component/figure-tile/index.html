@@ -1,0 +1,16 @@
+<figure class="result-tile ratio-one-one carousel-figure" :style="$root.backgroundImage(item.image_urls2)">
+	<div 
+		@click="$root.viewCarousel(item.image_urls)"
+		class="content">
+		<h1 
+			v-if="item.name"
+			class="tile-title">{{ item.name }}</h1>
+		<p>{{ item.location_name }}</p>
+		<p v-if="item.location_rating != null">score: {{ item.location_rating + ' / 10' }} </p>
+		<p>
+			<span v-if="item.hour_price">€{{ item.hour_price }}/hour</span>
+			<span v-if="item.hour_price">&nbsp;</span>
+			<span v-if="item.day_price">€{{ item.day_price }}/day</span>
+		</p>
+	</div>
+</figure>
