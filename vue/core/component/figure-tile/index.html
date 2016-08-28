@@ -1,7 +1,8 @@
 <figure class="result-tile ratio-one-one carousel-figure" :style="backgroundImage(item.image_urls2)">
-	<div 
+	<div
 		@click="viewCarousel(item.image_urls)"
-		class="content">
+		class="content"
+		:class="{ 'u-pointer': item.image_urls }">
 		<h1 
 			v-if="item.name"
 			class="tile-title">{{ item.name }}</h1>
