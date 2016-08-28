@@ -1,7 +1,7 @@
 <main class="u-flex u-box u-box--column u-relative">
 	<carousel 
 		:image_urls="image_urls"
-		:backgroundImage="backgroundImage"></carousel>
+		:background-image="backgroundImage"></carousel>
 	<footer class="u-absolute--footer u-box u-box--justify-center">
 		<div class="carousel-searchbar searchbar u-box u-flex u-padding-x">
 			<input class="searchbar-input u-flex u-padding" type="text" placeholder="Find a place to work &hellip;" v-model="query" />
@@ -16,18 +16,22 @@
 			<div class="u-box u-flex">
 				<figure-tile 
 					:item="rows[0]" 
-					:onSelect="onViewCarousel"></figure-tile>
+					:view-carousel="viewCarousel"
+					:background-image="backgroundImage"></figure-tile>
 				<figure-tile 
 					:item="rows[1]" 
-					:onSelect="onViewCarousel"></figure-tile>
+					:view-carousel="viewCarousel"
+					:background-image="backgroundImage"></figure-tile>
 			</div>
 			<div class="u-box u-flex">
 				<figure-tile 
 					:item="rows[2]" 
-					:onSelect="onViewCarousel"></figure-tile>
+					:view-carousel="viewCarousel"
+					:background-image="backgroundImage"></figure-tile>
 				<figure-tile 
 					:item="rows[3]" 
-					:onSelect="onViewCarousel"></figure-tile>
+					:view-carousel="viewCarousel"
+					:background-image="backgroundImage"></figure-tile>
 			</div>
 		</div>
 	</div>

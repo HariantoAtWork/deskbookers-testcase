@@ -1,7 +1,8 @@
 var component = {
 	props: [
 		'item',
-		'onSelect'
+		'background-image',
+		'view-carousel'
 	],
 	template: require('./index.html')
 }

@@ -1,7 +1,11 @@
 var component = {
 	props: [
 		'image_urls',
-		'backgroundImage'
+		{
+			name: 'background-image',
+			type: Function,
+			required: true
+		}
 	],
 	template: require('./index.html'),
 	data: function() {

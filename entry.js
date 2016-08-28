@@ -1,2 +1,2 @@
-require('!style!css!less!./less/style.less');
+require('./less/style.less');
 require('./vue');

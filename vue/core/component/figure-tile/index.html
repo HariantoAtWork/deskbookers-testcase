@@ -1,6 +1,6 @@
-<figure class="result-tile ratio-one-one carousel-figure" :style="$root.backgroundImage(item.image_urls2)">
+<figure class="result-tile ratio-one-one carousel-figure" :style="backgroundImage(item.image_urls2)">
 	<div 
-		@click="$root.viewCarousel(item.image_urls)"
+		@click="viewCarousel(item.image_urls)"
 		class="content">
 		<h1 
 			v-if="item.name"

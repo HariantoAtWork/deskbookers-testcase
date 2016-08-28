@@ -4,7 +4,7 @@
 		class="u-flex--fill carousel-figure u-absolute--full" 
 		v-show="$index == currentIndex"
 		transition="fades"
-		:style="$root.backgroundImage(url)"></figure>
+		:style="backgroundImage(url)"></figure>
 	<nav 
 		v-if="image_urls.length > 1"
 		class="carousel-controls u-absolute--full u-box u-box--justify-space-between u-box--align-center">
@@ -18,7 +18,7 @@
 				v-for="value in image_urls"
 				@click="onSelectedItem($index)"
 				class="u-circle" 
-				:class="{ 'active': ($index == currentIndex)}"></li>
+				:class="{ 'active': ($index == currentIndex) }"></li>
 		</ul>
 		<button 
 			@click.prevent="onNext"
